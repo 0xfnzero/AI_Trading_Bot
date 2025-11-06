@@ -99,9 +99,13 @@ models/
 *.pt
 
 # Data files
-data/
+# Ignore data directory at root level, but allow src/data/ Python files
+/data/
 *.csv
 *.json
 !config/*.json
 !requirements.txt
+# Allow src/data/ Python source files
+!src/data/
+src/data/*.bak
 

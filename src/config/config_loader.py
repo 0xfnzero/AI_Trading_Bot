@@ -86,7 +86,6 @@ class ConfigLoader:
         """
         获取交易币种列表
         
-        注意：正式网使用U本位合约（如 BTCUSDT）
         """
         symbols = config.get('trading', {}).get('symbols', [])
         return symbols
